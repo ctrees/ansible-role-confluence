@@ -1,0 +1,22 @@
+---
+# TODO: setup galaxy
+galaxy_info:
+  author: Chris Trees <ctrees@mailserviceslc.com>
+  description: Ansible Role for Atlassian Confluence Installation
+  company: Mail Services LLC
+  license: Apache License 2.0
+  min_ansible_version: 2.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - artful
+        - bionic
+    - name: EL
+      versions:
+        - 6
+        - 7
+  galaxy_tags:
+    - system
+dependencies: []
