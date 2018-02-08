@@ -1,9 +1,10 @@
 # Ansible role `confluence`
-
+<!-- 
 [//]: # todo [![Travis](https://img.shields.io/travis/ctrees/ansible-role-confluence.svg)](https://travis-ci.org/ctrees/ansible-role-confluence)
 [//]: # todo [![GitHub release](https://img.shields.io/github/release/ctrees/ansible-role-confluence.svg)](https://github.com/ctrees/ansible-role-confluence)
 [//]: # todo [![GitHub license](https://img.shields.io/github/license/ctrees/ansible-role-confluence.svg)](https://github.com/ctrees/ansible-role-confluence/blob/master/LICENSE)
 [//]: # todo [![Ansible Role](https://img.shields.io/badge/galaxy-ctrees.confluence-blue.svg)](https://galaxy.ansible.com/ctrees/confluence)
+-->
 
 Ansible Role for Atlassian Confluence Installation.
 
@@ -32,7 +33,7 @@ An Ansible role for installing an Atlassian Confluence Server. Specifically, the
 | `confluence_proxy_name` | "~" | `http` or `https`, and supply `confluence_proxy_name` with its domain name. |
 | `confluence_schema` | "~" | If Confluence running behide reverse proxy, setup `confluence_scheme` with whatever |
 | `confluence_jvm_support_recommended_args` | "-Datlassian.plugins.enable.wait=300" | Atlassian Support recommended JVM arguments. |
-| `confluence_url` | "https://downloads.atlassian.com/software/confluence/downloads/atlassian-confluence-6.6.2.tar.gz" | URL for download Confluence archive. |
+| `confluence_url` | [ConfluenceDownload](https://downloads.atlassian.com/software/confluence/downloads/atlassian-confluence-6.6.2.tar.gz) | URL for download Confluence archive. |
 
 ## Dependencies
 
@@ -41,8 +42,9 @@ An Ansible role for installing an Atlassian Confluence Server. Specifically, the
 - src: https://github.com/bertvv/ansible-role-mariadb
 
 ## Example Playbook
-
+<!-- 
 [//]: # todo - See the test playbooks in either the [Vagrant](https://github.com/ctrees/ansible-role-confluence/blob/vagrant-tests/test.yml) or [Docker](https://github.com/ctrees/ansible-role-confluence/blob/docker-tests/test.yml) test environment. See the section Testing for details.
+-->
 
 ## Testing
 
