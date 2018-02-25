@@ -10,12 +10,23 @@ Ansible Role for Atlassian Confluence Installation.
 
 An Ansible role for installing an Atlassian Confluence Server. Specifically, the responsibilities of this role are to:
 
--
+- Prepare a server to recieve the Atlassian Confluence Server.
+- Install Atlassian Confluence Server.
+- Configure Atlassian Confluence Server.
+- Test access to Atlassian Confluence Server.
+
+## Reference
+
+- [Atlassian Confluence Install](https://confluence.atlassian.com/doc/installing-confluence-on-linux-from-archive-file-255362363.html)
+- [Confluence REST API](https://docs.atlassian.com/atlassian-confluence/REST/6.6.0/#space-createSpace)
+- [Ansible Galaxy Requirements](https://zaiste.net/automatically_install_ansible_galaxy_roles_with_requirements_yml/)
+- https://galaxy.ansible.com/alvistack/
+
 
 ## Requirements
 
-- java
-- mariadb
+- JRE (Java Runtime Environment)
+- sql database (mariadb)
 
 ## Role Variables
 
@@ -32,7 +43,7 @@ An Ansible role for installing an Atlassian Confluence Server. Specifically, the
 | `confluence_context_path` | "~" | Context path for Confluence isntallation. |
 | `confluence_proxy_name` | "~" | `http` or `https`, and supply `confluence_proxy_name` with its domain name. |
 | `confluence_schema` | "~" | If Confluence running behide reverse proxy, setup `confluence_scheme` with whatever |
-| `confluence_jvm_support_recommended_args` | "-Datlassian.plugins.enable.wait=300" | Atlassian Support recommended JVM arguments. |
+| `confluence_jvm_args` | "-Datlassian.plugins.enable.wait=300" | Atlassian Support recommended JVM arguments. |
 | `confluence_url` | [ConfluenceDownload](https://downloads.atlassian.com/software/confluence/downloads/atlassian-confluence-6.6.2.tar.gz) | URL for download Confluence archive. |
 
 ## Dependencies
@@ -42,16 +53,19 @@ An Ansible role for installing an Atlassian Confluence Server. Specifically, the
 - src: https://github.com/bertvv/ansible-role-mariadb
 
 ## Example Playbook
+TODO: tests/test.yml
 <!-- 
 [//]: # todo - See the test playbooks in either the [Vagrant](https://github.com/ctrees/ansible-role-confluence/blob/vagrant-tests/test.yml) or [Docker](https://github.com/ctrees/ansible-role-confluence/blob/docker-tests/test.yml) test environment. See the section Testing for details.
 -->
 
 ## Testing
-
+TODO: tests/test.yml
+<!--
 There are two types of test environments available. One powered by Vagrant, another by Docker. The latter is suitable for running automated tests on Travis-CI. Test code is kept in separate orphan branches. For details of how to set up these test environments on your own machine, see the README files in the respective branches:
 
 - Vagrant: [vagrant-tests](https://github.com/ctrees/ansible-role-confluence/tree/vagrant-tests)
 - Docker: [docker-tests](https://github.com/ctrees/ansible-role-confluence/tree/docker-tests)
+-->
 
 ## Contributing
 

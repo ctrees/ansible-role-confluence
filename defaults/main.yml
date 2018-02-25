@@ -27,7 +27,7 @@ confluence_proxy_name: ~
 confluence_scheme: ~
 
 # Atlassian Support recommended JVM arguments.
-confluence_jvm_support_recommended_args: "-Datlassian.plugins.enable.wait=300"
+confluence_jvm_args: "-Datlassian.plugins.enable.wait=300"
 
 # URL for download Confluence archive.
 confluence_url: "https://downloads.atlassian.com/software/confluence/downloads/atlassian-confluence-6.6.2.tar.gz"
